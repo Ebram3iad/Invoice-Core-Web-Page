@@ -1,0 +1,231 @@
+﻿
+@{
+    ViewData["Title"] = "Invoice";
+}
+<h1>Invoice</h1>
+<hr />
+<header class="clearfix">
+    <div id="logo">
+        <img src="~/Img/unnamed.png" />
+    </div>
+    <div id="company">
+        <h2 class="name">DynamicsLink</h2>
+        <div>26, Ali Amin, Al Manteqah Al Oula, Nasr City, Cairo Governorate</div>
+        <div>
+            Tel : 02 20800759 || Mob : +2 01033323167
+        </div>
+        <div><a href="mailto:info@dynamicslink.com">info@dynamicslink.com</a></div>
+        <div><a href="www.dynamicslink.com" target="_blank">www.dynamicslink.com</a></div>
+    </div>
+</header>
+<main>
+    <div id="details" class="clearfix">
+        <div id="client">
+            <form class="form-group">
+                <div>
+                    <label class="to"> Invoice No : </label>
+                    <input type="text" class="form-control" />
+                </div>
+                <div class="address">
+                    <label class="to">Store : </label>
+                    <select class="form-control">
+                        <option>
+                            Item1
+                        </option>
+                        <option>
+                            Item2
+                        </option>
+                        <option>
+                            Item3
+                        </option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div id="invoice">
+            <div class="date ">
+                <label class="to">Invoice Date : </label>
+                <input type="date" class="form-control" />
+            </div>
+            <div class="date ">
+                <label class="to text-hide">Invoice Date : </label>
+                <input type="button" class="btn btn-primary form-control mt-4" value="Add" />
+            </div>
+        </div>
+    </div>
+
+    <table border="0" cellspacing="0" cellpadding="0">
+        <thead>
+            <tr>
+                <th class="no">#</th>
+                <th class="desc input-Style">Item</th>
+                <th class="unit input-Style">Unit</th>
+                <th class="desc">Price</th>
+                <th class="unit">Qty</th>
+                <th class="desc">Total</th>
+                <th class="unit">Discount</th>
+                <th class="total">Net</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="no">01</td>
+                <td class="desc">
+                    <select class="form-control input-Style">
+                        <option>
+                            Item1
+                        </option>
+                        <option>
+                            Item2
+                        </option>
+                        <option>
+                            Item3
+                        </option>
+                    </select>
+                </td>
+                <td class="unit">
+                    <select class="form-control input-Style">
+                        <option>
+                            Unit1
+                        </option>
+                        <option>
+                            Unit2
+                        </option>
+                        <option>
+                            Unit3
+                        </option>
+                    </select>
+                </td>
+                <td class="desc">
+                    <input type="text" class="form-control" />
+                </td>
+                <td class="unit">
+                    <input type="text" class="form-control" />
+                </td>
+                <td class="desc">
+                    <input type="text" class="form-control" />
+                </td>
+                <td class="unit">
+                    <input type="text" class="form-control" />
+                </td>
+                <td class="total">
+                    <input type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="no">02</td>
+                <td class="desc">
+                    <select class="form-control input-Style">
+                        <option>
+                            Item1
+                        </option>
+                        <option>
+                            Item2
+                        </option>
+                        <option>
+                            Item3
+                        </option>
+                    </select>
+                </td>
+                <td class="unit">
+                    <select class="form-control input-Style">
+                        <option>
+                            Unit1
+                        </option>
+                        <option>
+                            Unit2
+                        </option>
+                        <option>
+                            Unit3
+                        </option>
+                    </select>
+                </td>
+                <td class="desc">
+                    <input type="text" class="form-control" />
+                </td>
+                <td class="unit">
+                    <input type="text" class="form-control" />
+                </td>
+                <td class="desc">
+                    <input type="text" class="form-control" />
+                </td>
+                <td class="unit">
+                    <input type="text" class="form-control" />
+                </td>
+                <td class="total">
+                    <input type="text" class="form-control" />
+                </td>
+            </tr>
+            <tr>
+                <td class="no">03</td>
+                <td class="desc">
+                    <select class="form-control input-Style">
+                        <option>
+                            Item1
+                        </option>
+                        <option>
+                            Item2
+                        </option>
+                        <option>
+                            Item3
+                        </option>
+                    </select>
+                </td>
+                <td class="unit">
+                    <select class="form-control input-Style">
+                        <option>
+                            Unit1
+                        </option>
+                        <option>
+                            Unit2
+                        </option>
+                        <option>
+                            Unit3
+                        </option>
+                    </select>
+                </td>
+                <td class="desc">
+                    <input type="text" class="form-control" />
+                </td>
+                <td class="unit">
+                    <input type="text" class="form-control" />
+                </td>
+                <td class="desc">
+                    <input type="text" class="form-control" />
+                </td>
+                <td class="unit">
+                    <input type="text" class="form-control" />
+                </td>
+                <td class="total">
+                    <input type="text" class="form-control" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <section class="row">
+        <div class="col-6 d-flex justify-content-start align-items-end">
+
+            <input type="button" class="btn btn-success form-control w-50" value="Save" />
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <input type="button" class="btn btn-danger form-control w-50" value="Delete" />
+
+        </div>
+        <div class="col-6">
+            <div class="d-flex justify-content-end mb-2">
+                <label class="to mr-4"> Total :   </label>
+                <input type="text" class="form-control w-50" />
+            </div>
+            <div class="d-flex justify-content-end mb-2">
+                <label class="to mr-4"> Taxes :   </label>
+                <input type="text" class="form-control w-50" />
+            </div>
+            <div class="d-flex justify-content-end mb-2">
+                <label class="to mr-4"> Net :   </label>
+                <input type="text" class="form-control w-50" />
+            </div>
+        </div>
+
+    </section>
+</main>
